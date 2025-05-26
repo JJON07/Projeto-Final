@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Fibra Ótica</title>
+    <style>
+        * {
+            border: 5px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1,
+        figure,
+        footer {
+            text-align: center;
+        }
+
+        h1,
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        button {
+            background-color: #000;
+            color: #fff;
+            font-size: 22px;
+            border-style: groove;
+        }
+
+        .separador {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="separador">
+        <div>
+
+            <h1>FIBRA ÓTICA</h1>
+
+            <!-- 
+            Caso a pasta image estivesse logo abaixo de projeto09
+            o caminho seria:
+
+            <figure>
+                <img src="../image/projeto09-1.png" alt="Fibra ótica">
+            </figure> -->
+            
+
+            <figure>
+                <img src="image/projeto09-1.png" alt="">
+            </figure>
+
+
+            <!-- outra opção para voltar: usar <a href> -->
+            <footer>
+                <button name="btn" value="#" type="button" onclick="fechar()"
+                title="Fechar Página">Fechar</button>
+                <script>
+                    function fechar(){
+                        close();
+                    }
+                </script>
+            </footer>
+</body>
+
+</html>
