@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Banana Gamer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Grids</title>
+    <style>
+        *{
+            border: 0px;
+            padding: 2px;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .info{
+            font-family: arial;
+            font-size: 1.6rem;
+            text-align: justify;
+        }
+        h1,
+        h2{
+            font-family: Arial;
+        }
+        h1{
+            font-size: 2.0rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        #grid-secao{
+            margin-top: 10px;
+            background-color: #a52a2a;
+            color: #fff;
+            text-align: center;
+        }
+        .grid div{
+            background-color: #ff4500;
+            font-family: Arial;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 3px;
+            text-align: center;
+        }
+        header,
+        footer{
+            padding: 10px;
+            background-color: #d3d3d3;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            border: 5px solid #a1a1a1;
+            border-style: groove;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Banana Gamer</h1>
+        <p>Trabalhando com GRADES</p>
     </header>
-   
-    <h2>Historia dos jogos</h2>
+
+    <section class="secao">
+        <h1>SEÇÕES, GRADES E DIVISÕES</h1>
+
+    <h2>SEÇÕES</h2>
+
+    <p class="info">As seções são usadas para representar uma parte de um documento HTML, geralmente com um título ("h1", "h2") e contém
+        conteúdos semânticos ou seja, agrupam partes do documento de forma lógica.</p>
+
+    <h2>GRADES</h2>
+
+    <p class="info">Usamos as Grids para estruturar o layout da página. O layout de grade CSS apresenta um sistema de grade
+        bidimensional ao CSS. As grades (GRIDS) permitem configurar layouts em duas dimensões, ou seja, linhas e colunas. O
+        nome Grid tem origem justamente na junção de linhas e colunas (que formam uma grade ou grid). É possível usar a
+        unidade de medida PIXEL, para tamanhos fixos, porém, em grids, é muito comum o uso da unidade de medida "fr", que
+        possibilita um comportamento relativo, uma vez que foi projetada para esse fim. Na estrutura de grades é possível
+        fazer o controle de alinhamento, Controle de conteúdo sobreposto, usando para isso a propriedade "z-index". Grid é
+        um recurso poderoso quando combinada com CSS.</p>
+
+    <h2>DIVISÕES</h2>
+
+    <p class="info">O bloco "div" é usado para especificar um elemento de divisão, trata-se de um container genérico dentro do site. De
+        certa forma não representa nada visual, é usado para agrupar itens do documento com a finalidade de estilos, ,
+        usando para isso: class ou ids.</p>
+    </section>
+
+
+    <section class="secao" id="grid-secao">
+ 
+        <div class="grid">
+            <div><a href="./Pages/fibraotica.html" title="Ver Imagem Fibra Ótica" target="_blank">Fibra Ótica</a></div>
+            <div><a href="./Pages/conectorcoaxial.html" title="Ver Imagem Con. Coaxial" target="_blank">Con. Coaxial</a></div>
+            <div><a href="./Pages/partrancado.html" title="Ver Imagem Par Trançado" target="_blank">Par Trançado</a></div>
+            <div><a href="./Pages/conectorrj45.html" title="Ver Imagem Con. RJ45" target="_blank">Con. RJ45</a></div>
+            <div><a href="./Pages/conectorbnc.html" title="Ver Imagem Con. BNC" target="_blank">Con. BNC</a></div>
+            <div><a href="./Pages/bncblindado.html" title="Ver Imagem BNC Blindado" target="_blank">BNC Blindado</a></div>
+    </section>
+
+    <footer>
+        <p>Sections, Grids, Divs</p>
+    </footer>
+
 </body>
+
 </html>
