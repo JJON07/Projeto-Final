@@ -1,4 +1,4 @@
-NOME DO PROJETO:
+NOME DO PROJETO: Discovery Gamer
 
 LINK: https://github.com/JJON07/Projeto-Final
 
