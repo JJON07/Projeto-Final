@@ -1,6 +1,6 @@
-NOME DO PROJETO:
+NOME DO PROJETO: Discovery Gamer
 
-LINK:
+LINK: https://github.com/JJON07/Projeto-Final
 
 PARTICIPANTES:
 João Victor de Oliveira Pinto
