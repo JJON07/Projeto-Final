@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <title>Xp connect</title>
-
+ 
 <head>
 <style>
-  * {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-  }
-
-  html {
-    font-size: 62.5%;
-  }
-
   h1 {
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     padding-bottom: 10px;
     padding-left: 30px;
-
+ 
   }
-
+ 
   header {
     box-shadow: 0 2px 40px rgba(210, 180, 140, 0.5);
     padding-bottom: 15px;
     background-color: #fff;
+    width: 100vw;
   }
-
+ 
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+ 
   #x {
     font-size: 7rem;
     color: #D2B48C;
   }
-
+ 
   #b {
     font-size: 5.2rem;
     color: #FA8072;
   }
-
+ 
   nav ul {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     gap: 4.5rem;
   }
-
+ 
   nav ul li a {
     color: #4a5568;
     text-decoration: none;
@@ -61,49 +52,46 @@
     border-radius: 0.375rem;
     font-size: 2rem;
     transition: color 0.3s ease, background-color 0.3s ease;
-
+ 
   }
-
+ 
   #first-a {
     margin-left: 250px;
   }
-
+ 
   nav ul li a:hover {
     color: #4f46e5;
     background-color: #eef2ff;
   }
-
+ 
   nav ul li a.active {
     color: #4f46e5;
     font-weight: 600;
     border-bottom: 2px solid #4f46e5;
   }
-
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f0f0f0;
-  }
-
+ 
   * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
     color: #111;
     background: #fff;
   }
-
-
+ 
+ 
   body {
-    background: #fff;
-    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
     display: flex;
+    padding:0%;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
   }
-
-
+ 
+ 
   h2 {
     font-family: 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
     font-size: 2.5rem;
@@ -112,10 +100,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.8em;
-
+ 
   }
-
-
+ 
+ 
   p {
     max-width: 900px;
     font-size: 1.4rem;
@@ -131,8 +119,8 @@
     background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
-
-
+ 
+ 
   table {
     width: 90%;
     max-width: 1000px;
@@ -143,25 +131,25 @@
     overflow: hidden;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
   }
-
+ 
   thead tr {
     background: linear-gradient(to right, #D2B48C, #fa8072);
     font-weight: 1000px;
     font-size: 1.5rem;
-
+ 
   }
-
+ 
   tbody tr {
     background: linear-gradient(to right, #D2B48C, #fa8072);
-
+ 
   }
-
+ 
   tbody tr:hover {
     background-color: #D2B48C;
     cursor: pointer;
     color: #111;
   }
-
+ 
   td {
     padding: 1em 1.5em;
     text-align: center;
@@ -169,7 +157,7 @@
     font-weight: 600;
     color: #b59b79;
   }
-
+ 
   th {
     padding: 1em 1.5em;
     text-align: center;
@@ -177,16 +165,16 @@
     font-weight: 600;
     color: #fa8072;
   }
-
-
+ 
+ 
   tbody tr:last-child td {
     border-bottom: none;
   }
 </style>
 </head>
-
+ 
 <body>
-  <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <div id="div_header">
         <header>
         <h1><b id="x">X</b><b id="b">p</b> Connect</h1>
@@ -204,10 +192,10 @@
         </nav>
     </div>
     </header>
-  <h2>"Descubra o que faz nossa cidade vibrar!"</h2>
+  <h2 style="margin-top: 60px;">"Descubra o que faz nossa cidade vibrar!"</h2>
   <p> Dos festivais culturais às experiências únicas que só se vive aqui, explore os eventos que dão vida à
     nossa cidade e aproveite cada momento ao máximo.</p> <br><br>
-  <table border="4">
+  <table border = "4">
     <thead>
       <th>Experiencia</th>
       <th>Nome do local</th>
@@ -246,15 +234,7 @@
     <tr>
       <td> Gastronômica e Cultural </td>
       <td> Mercado Central de Belo Horizonte - </td>
-      <td>Av. Augusto de Lima, 744 </td>
-      <td>R$ 40</td>
-      <td>07:00 às 20:00</td>
-    </tr>
-    <tr>
-      <td> Restaurante/bar </td>
-      <td> Sô Madruga </td>
-      <td>Av. Fleming, 211 - Ouro Preto,</td>
-      <td>R$ 120</td>
+       <td>R$ 120</td>
       <td>11:00 às 22:00</td>
     </tr>
     <tr>
@@ -271,9 +251,17 @@
       <td>R$ 20</td>
       <td>08:00 às 18:00</td>
     </tr>
+ 
+    <td>Av. Augusto de Lima, 744 </td>
+      <td>R$ 40</td>
+      <td>07:00 às 20:00</td>
+      <td> Restaurante/bar </td>
+      <td> Sô Madruga </td>
+      <td>Av. Fleming, 211 - Ouro Preto,</td>
+    </tr>
 
   </table>
-
+ 
 </body>
-
-</html>
+ 
+</html>   
