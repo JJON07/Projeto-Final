@@ -1,11 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <style>
+        
+       
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111; 
+  background: #fff; 
+}
+
+
+body {
+  background: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+h2 {
+  font-family: 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #D2B48C, #fa8072);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.8em;
+  
+}
+
+
+p {
+  max-width: 900px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+ color: #111;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  text-align: center;
+  background: linear-gradient(to right, #D2B48C, #fa8072);
+  -webkit-background-clip: text;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+thead tr {
+background: linear-gradient(to right, #D2B48C, #fa8072);
+  font-weight: 1000px;
+  font-size: 1.5rem;
+  
+}
+
+tbody tr {
+    background: linear-gradient(to right, #D2B48C, #fa8072);
+ 
+}
+
+tbody tr:hover {
+  background-color: #D2B48C; 
+  cursor: pointer;
+  color: #111;
+}
+
+td{
+  padding: 1em 1.5em;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-weight: 600;
+  color:#D2B48C;
+}
+th{
+    padding: 1em 1.5em;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-weight: 600;
+  color:#fa8072;
+}
+
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+
+
+    </style>
 </body>
+<h2>"Descubra o que faz nossa cidade vibrar!"</h2>
+       <p> Dos festivais culturais às experiências únicas que só se vive aqui, explore os eventos que dão vida à 
+        nossa cidade e aproveite cada momento ao máximo.</p> <br><br>
+        <table border="4">
+            <thead>
+                <th>Experiencia</th>
+                <th>Nome do local</th>
+                <th>Endereço</th>
+                <th>Valor Médio</th>
+            </thead>
+            <tr>
+                <td> Luta/Dança </td>
+                <td> Arte Quilombo Capoeira</td>
+                <td> Rua Epaminondas Otoni - Vista Alegre, </td>
+                <td>Gratuito</td>
+            </tr>
+            <tr>
+                <td> Casa de shows </td>
+                <td> Praia Buritis</td>
+                <td>Av. do Contorno, 7060</td>
+                <td>R$ 100</td>
+            </tr>
+            <tr>
+                <td> Degustação de vinho </td>
+                <td> Casa Geraldo Vinhos Finos </td>
+                <td>Rua Moisés Kalil, 209, Buritis</td>
+                <td>R$ 120</td>
+            </tr>
+            <tr>
+                <td> Experiência esportiva </td>
+                <td> Mineirão</td>
+                <td>Av. Antônio Abrahão Caram, 1001</td>
+                <td>Gratuito a R$150</td>
+            </tr>
+            <tr>
+                <td> Gastronômica e Cultural </td>
+                <td> Mercado Central de Belo Horizonte - </td>
+                <td>Av. Augusto de Lima, 744 </td>
+                <td>R$ 40</td>
+            </tr>
+            <tr>
+                <td> Restaurante/bar </td>
+                <td>  Sô Madruga </td>
+                <td>Av. Fleming, 211 - Ouro Preto,</td>
+                <td>R$ 120</td>
+            </tr>
+            <tr>
+                <td> Cultural </td>
+                <td> Feira Hippie</td>
+                <td>Av. Afonso Pena - Centro</td>
+                <td>Gratuito</td>
+            </tr>
+            <tr>
+                <td> Lazer </td>
+                <td> Passeio de bicicleta na orla da Pampulha</td>
+                <td>Av. Otacílio Negrão de Lima, 2077</td>
+                <td>R$ 20</td>
+            </tr>
+            
+        </table>
 </html>
