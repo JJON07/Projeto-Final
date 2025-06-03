@@ -1,13 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XP Connect - Sobre o Projeto</title>
     <link rel="icon" type="image/x-icon" href="../imagens/hero_bg.png">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        h3{
+            text-align: center;
+        }
+
+        .cardImagem {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 10px;
+            margin-right: 1rem;
+            object-fit: cover;
+            background-color: #fa807252;
+        }
+
+        .cardEquipe {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background-color: #d2b48cb0;
+            /* indigo-50 */
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            /* shadow-sm */
+        }
+
+        .gridEquipe {
+            display: grid;
+            gap: 10px;
+        }
+
+        .sobre {
+            width: 1000px;
+            margin: auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        ul{
+            padding-left: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    TESTE
+    <h2>Sobre o Projeto XP Connect</h2>
+
+    <div class="sobre">
+        <div class="objetivo">
+            <h3>Objetivo do trabalho</h3>
+            <p>
+                Este site foi desenvolvido como parte de um trabalho de desenvolvimento web, com o objetivo de
+                demonstrar os conhecimentos adquiridos em HTML, CSS e JavaScript. A proposta é aplicar conceitos de
+                design responsivo, interatividade e organização de conteúdo em diferentes formatos de página.
+            </p>
+            <p>
+                O tema "XP Connect" foi escolhido para explorar a criação de uma plataforma digital que conecta pessoas
+                a experiências culturais e locais, permitindo a prática de diversas funcionalidades essenciais em um
+                site moderno.
+            </p>
+        </div>
+
+        <div>
+            <h3>A Equipe</h3>
+            <div class="gridEquipe">
+                <div class="cardEquipe">
+                    <img src="../Images/SaoJoao.jpg" alt="Membro 1" class="cardImagem">
+                    <div>
+                        <p>João Victor de Oliveira Pinto</p>
+                        <p>Função: Desenvolvedor Front-end</p>
+                    </div>
+                </div>
+                <div class="cardEquipe">
+                    <img src="../imagens/placeholder_member.png" alt="Membro 2" class="cardImagem">
+                    <div>
+                        <p>Nome do Participante 2</p>
+                        <p>Função: Designer UI/UX</p>
+                    </div>
+                </div>
+                <div class="cardEquipe">
+                    <img src="../imagens/placeholder_member.png" alt="Membro 3" class="cardImagem">
+                    <div>
+                        <p>Nome do Participante 3</p>
+                        <p>Função: Pesquisador de Conteúdo</p>
+                    </div>
+                </div>
+                <div class="cardEquipe">
+                    <img src="../imagens/placeholder_member.png" alt="Membro 4" class="cardImagem">
+                    <div>
+                        <p>Nome do Participante 4</p>
+                        <p>Função: Gerente de Projeto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech">
+            <h3>Tecnologias Utilizadas</h3>
+            <ul>
+                <li>HTML (Estrutura Semântica)</li>
+                <li>CSS (Estilização e Responsividade)</li>
+                <li>JavaScript (Interatividade e Lógica)</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Agradecimentos</h3>
+            <p>
+                Agradecemos a oportunidade de desenvolver este projeto e a todos que contribuíram para sua realização.
+                Esperamos que esta demonstração reflita nosso empenho e aprendizado no desenvolvimento web.
+            </p>
+        </div>
+    </div>
+
 </body>
+
 </html>
