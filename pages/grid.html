@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+         h1 {
+          font-size: 3rem;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: left;
+          padding-bottom: 10px;
+          padding-left: 30px;
+    
+        }
+    
+        html {
+          font-size: 62.5%;
+        }
+    
+        header {
+          box-shadow: 0 2px 40px rgba(210, 180, 140, 0.5);
+          padding-bottom: 15px;
+          background-color: #fff;
+          width: 100vw;
+        }
+    
+        nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+    
+        #x {
+          font-size: 7rem;
+          color: #D2B48C;
+        }
+    
+        #b {
+          font-size: 5.2rem;
+          color: #FA8072;
+        }
+    
+        nav ul {
+          display: flex;
+          list-style: none;
+          padding: 0px;
+          margin: 0px;
+          gap: 4.5rem;
+        }
+    
+        nav ul li a {
+          color: #4a5568;
+          text-decoration: none;
+          font-weight: 500;
+          padding: 0.5rem 0.75rem;
+          border-radius: 0.375rem;
+          font-size: 2rem;
+          transition: color 0.3s ease, background-color 0.3s ease;
+    
+        }
+    
+        #first-a {
+          margin-left: 250px;
+        }
+    
+        nav ul li a:hover {
+          color: #4f46e5;
+          background-color: #eef2ff;
+        }
+    
+        nav ul li a.active {
+          color: #4f46e5;
+          font-weight: 600;
+          border-bottom: 2px solid #4f46e5;
+        }
+    
+        * {
+          margin: 0px;
+          border: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+          font-family: 'Segoe UI', sans-serif;
+          color: #111;
+          background: #fff;
+        }
+    
+    
+        body {
+          font-family: 'Inter', sans-serif;
+          background-color: #f0f0f0;
+          display: flex;
+          padding: 0%;
+          flex-direction: column;
+          align-items: center;
+          min-height: 100vh;
+        }
+    
+    
+        h2 {
+            font-family: 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
+      font-size: 4rem;
+      text-align: center;
+      background: linear-gradient(to right, #D2B48C, #fa8072);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.8em;
+      margin-top: 0.5em;
+    
+        }
+        h3{
+            font-family: 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
+            font-size: 2.2rem;
+            text-align: center;
+            margin: 0.6em;
+            background: linear-gradient(to right, #D2B48C, #fa8072);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
+        }
+
+        p{
+            max-width: 900px;
+          font-size: 2rem;
+          line-height: 1.6;
+          color: #111;
+          text-align: center;
+          margin-bottom: 2rem;
+          padding: 1em 1.5em;
+          border-radius: 8px;
+          text-align: center;
+          background: linear-gradient(to right, #D2B48C, #fa8072);
+          background: #fff;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        } 
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1000px 1000px;
+            gap: 30px;
+            color:rgba(248, 247, 245, 0.928);
+            font-size: 24px;
+            font-weight: bolder;
+            text-align: left;
+            padding: 0px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            border: 3px solid rgb(7, 7, 7); 
+            border-radius: 12px;
+        }
+        #fundo1{
+            background-image: url(imagem/Feira-Hippie-BH.jpg);
+            height: 250px;
+  background-size: cover;
+  background-position: center;
+  gap: 120px;
+        }
+        #fundo2{
+            background-image: url(imagem/GerladoVinhos.jpg);
+            height: 250px;
+  background-size: cover;
+  background-position: center;
+  gap: 120px;
+
+        }
+        #fundo3{
+            background-image: url(imagem/MINEIRAO-004-1.jpg);
+            height: 250px;
+  background-size: cover;
+  background-position: center;
+  gap: 120px;
+
+        }
+        #fundo4{
+            background-image: url(imagem/Mercado-Central-de-Belo-Horizonte.jpg);
+            height: 250px;
+  background-size: cover;
+  background-position: center;
+  gap: 120px;
+
+        }
+        #fundo5{
+            background-image: url(imagem/61f2f1ac004d5.jpg);
+            height: 250px;
+  background-size: cover;
+  background-position: center;
+  gap: 120px;
+
+        }
+        #fundo6{
+            background-image: url(imagem/lagoa-da-pampulha-ganhara-mais-7-km-de-ciclovia.jpg);
+            height: 250px;
+  background-size: cover;
+  background-position: center;
+  gap: 120px;
+
+        }
+        #fundo7{
+            background-image: url(imagem/so-madruga1-1.jpg);
+            height: 250px;
+  background-size: cover;
+  background-position: center;
+  gap: 120px;
+
+        }
+        #fundo8{
+            background-image: url(imagem/1.jpg);
+            height: 250px;
+  background-size: cover;
+  background-position: center;
+  gap: 120px;
+
+        }
+        .grida{
+            display: inline-block; 
+  width: 100%;          
+  color: rgb(13, 9, 0);         
+  text-decoration: none; 
+  padding: 8px 0;        
+  box-sizing: border-box;
+        }
+
+        #griddosgrids{
+            border: 0px;
+        }
+
+    </style>
+       
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <div id="div_header">
+      <header>
+        <h1><b id="x">X</b><b id="b">p</b> Connect</h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html" id="first-a">Início</a></li>
+            <li><a href="../pages/tabelas.html">Tabelas</a></li>
+            <li><a href="../pages/grid.html">Grid</a></li>
+            <li><a href="../pages/formulario.html">Formulário</a></li>
+            <li><a href="../pages/mapa.html">Mapa</a></li>
+            <li><a href="../pages/calculo.html">Cálculo JS</a></li>
+            <li><a href="../pages/sobre.html">Sobre</a></li>
+            <li><a href="../pages/landing.html">Landing Page</a></li>
+          </ul>
+        </nav>
+    </div>
+    <header>
+        <h2>Galeria de Vivências: Momentos Inesquecíveis</h2>
+        <h3>Explore algumas das experiências mais incríveis disponíveis na XP Connect. Clique para saber mais!</h3>
+    </header>
+<div class="grid" id="griddosgrids">
+   <a class="grida" href="https://feirahippiedebh.com.br/" target="_blank">
+    <div  class="grid" id="fundo1" >Capa Feira Hippie</div>
+   </a> 
+    <a class="grida" href=https://www.casageraldo.com.br/ target="_blank">
+        <div class="grid" id="fundo2">Capa Geraldo Vinhos Finos</div>
+    </a> 
+<a class="grida" href=https://mineirao.com.br/ target="_blank">
+    <div class="grid" id="fundo3">Capa Mineirão</div>
+</a>
+    <a class="grida" href=https://mercadocentral.com.br/ target="_blank">
+        <div class="grid" id="fundo4">Capa Mercado Central</div>
+    </a>
+    <a class="grida" href=https://www.instagram.com/praiaburitis/ target="_blank">
+        <div class="grid" id="fundo5">Capa Praia Buritis</div>
+    </a>
+    <a class="grida" href=https://www.tripadvisor.com.br/Attraction_Review-g303374-d8515672-Reviews-Lagoa_da_Pampulha-Belo_Horizonte_State_of_Minas_Gerais.html target="_blank">
+        <div class="grid" id="fundo6">Capa Passeio de bicicleta na orla da Pampulha</div>
+    </a>
+   <a class="grida" href=https://www.tripadvisor.com.br/Restaurant_Review-g303374-d25089944-Reviews-So_Madruga_Bar_E_Restaurante-Belo_Horizonte_State_of_Minas_Gerais.html target="_blank">
+    <div class="grid" id="fundo7">Capa Sô Madruga</div>
+   </a>
+   <a class="grida" href=https://www.instagram.com/quilomboarte.capoeira/ target="_blank">
+    <div class="grid" id="fundo8">Capa Arte Quilombo Capoeira</div>
+   </a>
+   
+
+
+</div>
+</body>
+</html>
