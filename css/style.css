@@ -36,3 +36,8 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+h5{
+    font-size: 1.6rem;
+    color: black;
+}
