@@ -10,10 +10,16 @@ html {
 
 footer {
     background-color: rgba(210, 180, 140, 0.5);
-    /* gray-800 */
     color: rgb(255, 255, 255);
     padding: 2rem 1rem;
-    margin-top: 3rem;
+    margin-top: auto; /* Garante que fique no rodapé ao usar flex no body */
     text-align: center;
-    /* mt-12 */
+    width: 100vw;
+    min-height: 80px; /* OU a altura que preferir */
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
