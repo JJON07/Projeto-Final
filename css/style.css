@@ -21,6 +21,10 @@ footer {
     box-sizing: border-box;
 }
 
+.rodape{
+    font-size: 1.6rem;
+}
+
 body {
     display: flex;
     flex-direction: column;
