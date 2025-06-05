@@ -14,27 +14,6 @@ footer {
     color: rgb(255, 255, 255);
     padding: 2rem 1rem;
     margin-top: 3rem;
+    text-align: center;
     /* mt-12 */
-}
-
-footer .container {
-    text-align: center;
-}
-
-.footerp {
-    margin-bottom: 1rem;
-    color: white;
-    text-align: center;
-}
-
-footer .footer-links a {
-    color: #a0aec0;
-    /* gray-400 */
-    text-decoration: none;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
-}
-
-footer .footer-links a:hover {
-    color: white;
 }
