@@ -12,14 +12,23 @@ footer {
     background-color: rgba(210, 180, 140, 0.5);
     color: rgb(255, 255, 255);
     padding: 2rem 1rem;
-    margin-top: auto; /* Garante que fique no rodapé ao usar flex no body */
+    margin-top: auto;
+    /* Garante que fique no rodapé ao usar flex no body */
     text-align: center;
     width: 100vw;
-    min-height: 80px; /* OU a altura que preferir */
+    min-height: 80px;
+    /* OU a altura que preferir */
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+h2 {
+    background: linear-gradient(to right, #D2B48C, #fa8072);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
