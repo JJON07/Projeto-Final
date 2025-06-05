@@ -21,7 +21,7 @@ footer .container {
     text-align: center;
 }
 
-footer p {
+.footerp {
     margin-bottom: 1rem;
     color: white;
 }
