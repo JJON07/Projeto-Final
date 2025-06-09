@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Preços</title>
     <link rel="stylesheet" href="../css/style.css">
-    <base href="/Projeto-Final/"> <!-- Adjust for GitHub Pages base path -->
+    <base href="/Projeto-Final/">
     <style>
         h1 {
             font-size: 3rem;
@@ -83,9 +84,9 @@
             padding: 0;
             box-sizing: border-box;
         }
- 
+
         .xp-calculator {
-            background: linear-gradient(135deg, #cec1b0 0%, #cabaa4 100%);
+            background: #f0f0f0;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -93,21 +94,21 @@
             justify-content: flex-start;
             padding: 1rem;
             font-family: Arial, sans-serif;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
- 
+
         @media (min-width: 640px) {
             .xp-calculator {
                 padding: 1.5rem;
             }
         }
- 
+
         .xp-calculator header {
             width: 100%;
-            max-width: 48rem;
-            margin: 0 auto 1.5rem;
+            max-width: 70rem;
+            margin: 0 auto 2.5rem;
         }
- 
+
         .xp-calculator .header-bg {
             background: linear-gradient(90deg, #fca59b 0%, #fa8072 100%);
             padding: 1.5rem;
@@ -115,54 +116,55 @@
             border-radius: 1rem;
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
- 
+
         .xp-calculator .header-bg h2 {
             font-size: 2.25rem;
             font-weight: 800;
             color: #ffffff;
             margin-bottom: 0.5rem;
         }
- 
+
         .xp-calculator .header-bg p {
-            font-size: 1.125rem;
+            font-size: 1.5rem;
             color: #e5e7eb;
         }
- 
+
         .xp-calculator .calculator {
             background: #ffffff;
             border-radius: 1rem;
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
             padding: 1.5rem;
-            max-width: 32rem;
+            width: 60rem;
+            max-height: 72rem;
         }
- 
+
         @media (min-width: 640px) {
             .xp-calculator .calculator {
                 padding: 2rem;
             }
         }
- 
+
         .xp-calculator .calculator h3 {
-            font-size: 1.875rem;
+            font-size: 2.5rem;
             font-weight: 800;
             color: #000000;
             text-align: center;
             margin-bottom: 0.5rem;
         }
- 
+
         .xp-calculator .calculator p {
-            font-size: 0.875rem;
+            font-size: 1.5rem;
             color: #000000;
             text-align: center;
             margin-bottom: 1.5rem;
         }
- 
+
         @media (min-width: 640px) {
             .xp-calculator .calculator p {
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
         }
- 
+
         .xp-calculator .item-card {
             display: flex;
             align-items: center;
@@ -171,20 +173,20 @@
             background: #f9fafb;
             border-radius: 0.5rem;
             cursor: pointer;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
             transition: background-color 0.4s ease-in-out, transform 0.25s ease-in-out;
         }
- 
+
         .xp-calculator .item-card:hover {
             background-color: #fdf3f2;
             transform: translateY(-3px);
         }
- 
+
         .xp-calculator .item-card span {
             color: #374151;
             font-weight: 500;
         }
- 
+
         .xp-calculator .item-checkbox {
             width: 1.25rem;
             height: 1.25rem;
@@ -192,17 +194,17 @@
             border-radius: 0.25rem;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
- 
+
         .xp-calculator .item-checkbox:focus {
             outline: none;
             box-shadow: 0 0 0 3px rgba(250, 128, 114, 0.5);
         }
- 
+
         .xp-calculator .item-checkbox:hover {
             transform: scale(1.1);
             box-shadow: 0 0 8px rgba(250, 128, 114, 0.5);
         }
- 
+
         .xp-calculator .calculate-btn {
             width: 100%;
             padding: 0.75rem;
@@ -214,13 +216,14 @@
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
             margin-bottom: 0.75rem;
+            font-size: 1.7rem;
         }
- 
+
         .xp-calculator .calculate-btn:hover {
             background-color: #f78b7f;
             transform: scale(1.02);
         }
- 
+
         .xp-calculator .clear-btn {
             width: 100%;
             padding: 0.75rem;
@@ -231,63 +234,45 @@
             font-weight: 500;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 1.7rem;
         }
- 
+
         .xp-calculator .clear-btn:hover {
             background-color: #ccba9c;
             transform: scale(1.02);
         }
- 
+
         .xp-calculator #calc-result {
             margin-top: 1.5rem;
-            font-size: 1.125rem;
+            font-size: 1.5rem;
             font-weight: 600;
             color: #000000;
             text-align: center;
         }
- 
+
         .xp-calculator #calc-result span {
-            font-size: 0.875rem;
+            font-size: 1.3rem;
             color: #000000;
         }
- 
+
         .xp-calculator #calc-error {
             margin-top: 0.5rem;
             color: #1f2937;
             text-align: center;
-            font-size: 0.875rem;
+            font-size: 1.4rem;
         }
- 
+
         .xp-calculator .fade-in {
             animation: fadeIn 0.6s ease-in-out;
         }
- 
-        .xp-calculator footer {
-            background-color: rgba(210, 180, 140, 0.5);
-            color: rgb(255, 255, 255);
-            padding: 2rem 1rem;
-            margin-top: auto;
-            text-align: center;
-            width: 100vw;
-            min-height: 80px;
-            box-sizing: border-box;
-        }
- 
-        .xp-calculator .rodape {
-            font-size: 1.6rem;
-        }
- 
-        .xp-calculator h5 {
-            font-size: 150%;
-            color: black;
-        }
- 
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(10px);
                 background-color: #f0f9ff;
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -296,8 +281,9 @@
         }
     </style>
 </head>
+
 <body>
-     <div id="div_header">
+    <div id="div_header">
         <header>
             <h1><b id="x">X</b><b id="b">p</b> Connect</h1>
             <nav>
@@ -308,7 +294,7 @@
                     <li><a href="..pages/formulario.html">Formulário</a></li>
                     <li><a href="../pages/mapas.html">Mapa</a></li>
                     <li><a href="..pages/calculo.html">Cálculo JS</a></li>
-                    <li><a href="../pages/sobre.html">Sobre</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
                     <li><a href="..pages/landing.html">Landing Page</a></li>
                 </ul>
             </nav>
@@ -320,7 +306,7 @@
         <header>
             <div class="header-bg">
                 <h2>Xp Connect - Calculadora de Preços</h2>
-                <p>Calcule o custo total para realizar suas experiências desejadas de forma rápida e fácil! Selecione entre 1 a 8 experiências e veja o total instantaneamente!</p>
+                <p>Calcule o custo total das suas experiências! Selecione de 1 a 8 opções.</p>
             </div>
         </header>
         <div class="calculator">
@@ -337,7 +323,8 @@
                 </label>
                 <label class="item-card">
                     <span>Degustação de Vinho - R$ 120,00</span>
-                    <input type="checkbox" class="item-checkbox" value="120" aria-label="Degustação de Vinho - R$ 120,00">
+                    <input type="checkbox" class="item-checkbox" value="120"
+                        aria-label="Degustação de Vinho - R$ 120,00">
                 </label>
                 <label class="item-card">
                     <span>Mineirão - R$ 60,00</span>
@@ -349,7 +336,8 @@
                 </label>
                 <label class="item-card">
                     <span>Restaurante Sô Madruga - R$ 120,00</span>
-                    <input type="checkbox" class="item-checkbox" value="120" aria-label="Restaurante Sô Madruga - R$ 120,00">
+                    <input type="checkbox" class="item-checkbox" value="120"
+                        aria-label="Restaurante Sô Madruga - R$ 120,00">
                 </label>
                 <label class="item-card">
                     <span>Feira Hippie - Gratuito</span>
@@ -357,7 +345,8 @@
                 </label>
                 <label class="item-card">
                     <span>Passeio de Bicicleta na Pampulha - R$ 20,00</span>
-                    <input type="checkbox" class="item-checkbox" value="20" aria-label="Passeio de Bicicleta na Pampulha - R$ 20,00">
+                    <input type="checkbox" class="item-checkbox" value="20"
+                        aria-label="Passeio de Bicicleta na Pampulha - R$ 20,00">
                 </label>
             </div>
             <div>
@@ -367,34 +356,21 @@
             <div id="calc-result"></div>
             <div id="calc-error"></div>
         </div>
-        <footer>
-            <div>
-                <h5 id="footer-year"></h5>
-                <h5>Este projeto é uma demonstração acadêmica e não possui fins comerciais.</h5><br>
-                <div class="rodape">
-                    <a href="https://github.com/JJON07/Projeto-Final" target="_blank">Repositório GitHub</a>
-                    <a href="index.html">Contato</a> <!-- Fallback to index.html if contact.html doesn't exist -->
-                </div>
-            </div>
-        </footer>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Definir ano dinâmico no rodapé
-            document.getElementById('footer-year').innerText = `© ${new Date().getFullYear()} Projeto XP Connect - Desenvolvido para a disciplina de Desenvolvimento WEB`;
- 
             // Função para calcular o total
             const calculateTotal = () => {
                 const checkboxes = document.querySelectorAll('.xp-calculator .item-checkbox:checked');
                 const errorDiv = document.getElementById('calc-error');
                 const resultDiv = document.getElementById('calc-result');
- 
+
                 errorDiv.innerText = '';
                 resultDiv.innerText = '';
                 resultDiv.classList.remove('fade-in');
- 
+
                 const selectedCount = checkboxes.length;
- 
+
                 if (selectedCount < 1) {
                     errorDiv.innerText = 'Selecione pelo menos 1 experiência.';
                     return;
@@ -403,7 +379,7 @@
                     errorDiv.innerText = 'Você pode selecionar no máximo 8 experiências.';
                     return;
                 }
- 
+
                 let total = 0;
                 const selectedItems = [];
                 checkboxes.forEach(checkbox => {
@@ -411,11 +387,11 @@
                     const label = checkbox.parentElement.querySelector('span').innerText;
                     selectedItems.push(label);
                 });
- 
+
                 resultDiv.innerHTML = `Total: R$ ${total.toFixed(2)}<br><span>Experiências: ${selectedItems.join(', ')}</span>`;
                 resultDiv.classList.add('fade-in');
             };
- 
+
             // Função para limpar seleção
             const clearSelection = () => {
                 const checkboxes = document.querySelectorAll('.xp-calculator .item-checkbox');
@@ -423,11 +399,23 @@
                 document.getElementById('calc-result').innerText = '';
                 document.getElementById('calc-error').innerText = '';
             };
- 
+
             // Adicionar event listeners aos botões
             document.querySelector('.xp-calculator .calculate-btn').addEventListener('click', calculateTotal);
             document.querySelector('.xp-calculator .clear-btn').addEventListener('click', clearSelection);
         });
     </script>
+
+    <footer>
+        <div>
+            <h5>&copy; 2025 Projeto XP Connect - Desenvolvido para a disciplina de Desenvolvimento WEB</h5>
+            <h5>Este projeto é uma demonstração acadêmica e não possui fins comerciais.</h5><br>
+            <div class="rodape">
+                <a href="https://github.com/JJON07/Projeto-Final" target="_blank">Repositório GitHub</a>
+                <a href="">Contato</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

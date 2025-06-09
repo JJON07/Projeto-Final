@@ -31,12 +31,6 @@ body {
     min-height: 100vh;
 }
 
-h2 {
-    background: linear-gradient(to right, #D2B48C, #fa8072);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 h5{
     font-size: 150%;
     color: black;
