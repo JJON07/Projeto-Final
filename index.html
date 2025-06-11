@@ -19,16 +19,16 @@
 
         h1 {
             font-size: 3rem;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Inter', sans-serif;
             text-align: left;
             padding-bottom: 10px;
             padding-left: 30px;
 
         }
 
-        h2{
-            background: linear-gradient(to right, #D2B48C, #fa8072); 
-            -webkit-background-clip: text; 
+        h2 {
+            background: linear-gradient(to right, #D2B48C, #fa8072);
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 3rem;
             text-align: center;
@@ -48,8 +48,8 @@
             align-items: center;
         }
 
-        p{
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        p {
+            font-family: 'Inter', sans-serif;
             font-size: 2rem;
             text-align: center;
         }
@@ -83,9 +83,6 @@
 
         }
 
-        #first-a {
-            margin-left: 250px;
-        }
 
         nav ul li a:hover {
             color: #4f46e5;
@@ -111,18 +108,21 @@
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin-bottom: 40px ;
+            margin-bottom: 40px;
             margin-top: 70px;
         }
+
         .intro p {
             font-size: 18px;
             line-height: 1.6;
         }
+
         .sections {
             display: flex;
             flex-direction: column;
             padding: 0;
         }
+
         .section {
             min-height: 400px;
             padding: 60px 20px;
@@ -138,12 +138,15 @@
             position: relative;
             overflow: hidden;
         }
+
         .section:nth-child(odd) {
             background: linear-gradient(135deg, #D2B48C 0%, #e6c9a8 100%);
         }
+
         .section:nth-child(even) {
             background: linear-gradient(135deg, #FA8072 0%, #ffb8ae 100%);
         }
+
         .section::before {
             content: '';
             position: absolute;
@@ -154,11 +157,13 @@
             background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
             opacity: 0.3;
         }
+
         .section h3 {
             font-size: 28px;
             margin: 0 0 15px;
             z-index: 1;
         }
+
         .section p {
             font-size: 16px;
             max-width: 600px;
@@ -166,6 +171,7 @@
             line-height: 1.5;
             z-index: 1;
         }
+
         .section a {
             text-decoration: none;
             color: #fff;
@@ -176,18 +182,86 @@
             z-index: 1;
             transition: background-color 0.3s ease;
         }
+
         .section a:hover {
             background-color: #333;
         }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            position: relative;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 3rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+            font-size: 2rem;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #4a5568;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #4f46e5;
+            background-color: #eef2ff;
+            padding: 0.5rem 0.75rem;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                display: none;
+                padding: 10px 0;
+                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.show {
+                display: flex;
+
+            }
+        }
     </style>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("show");
+        }
+    </script>
 </head>
 
 <body>
     <div id="div_header">
         <header>
             <h1><b id="x">X</b><b id="b">p</b> Connect</h1>
-            <nav>
-                <ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav class="navbar">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" id="first-a">Início</a></li>
                     <li><a href="pages/tabelas.html">Tabelas</a></li>
                     <li><a href="pages/grid.html">Grid</a></li>
@@ -202,8 +276,10 @@
         </header>
     </div>
 
-    <h2>Bem vindo a Xp Connect a sua mais nova forma de encontrar experiencias e ficar por dentro de todos os eventos</h2>
-    <p>Na Xp Connect temos o compromisso de te deixar ciente de tudo que tem rolado na cidade, pra não peder nada que vai acontecer</p>
+    <h2>Bem vindo a Xp Connect a sua mais nova forma de encontrar experiencias e ficar por dentro de todos os eventos
+    </h2>
+    <p>Na Xp Connect temos o compromisso de te deixar ciente de tudo que tem rolado na cidade, pra não peder nada que
+        vai acontecer</p>
     <p>Conectamos você às melhores aventuras, eventos e vivências, personalizadas para tornar cada dia único.</p>
 
     <section class="intro">
@@ -212,7 +288,8 @@
     <div class="sections">
         <section class="section">
             <h3>Explore Experiências</h3>
-            <p>Descubra uma lista completa de experiências disponíveis, desde aventuras ao ar livre até eventos culturais em Belo Horizonte.</p>
+            <p>Descubra uma lista completa de experiências disponíveis, desde aventuras ao ar livre até eventos
+                culturais em Belo Horizonte.</p>
             <a href="pages/tabelas.html">Ver Experiências</a>
         </section>
         <section class="section">
@@ -241,16 +318,16 @@
             <a href="pages/mapas.html">Explorar Mapa</a>
         </section>
 
-    <footer>
-        <div>
-            <h5>&copy; 2025 Projeto XP Connect - Desenvolvido para a disciplina de Desenvolvimento WEB</h5>
-            <h5>Este projeto é uma demonstração acadêmica e não possui fins comerciais.</h5><br>
-            <div class="rodape">
-                <a href="https://github.com/JJON07/Projeto-Final" target="_blank">Repositório GitHub</a>
-                <a href="">Contato</a>
+        <footer>
+            <div>
+                <h5>&copy; 2025 Projeto XP Connect - Desenvolvido para a disciplina de Desenvolvimento WEB</h5>
+                <h5>Este projeto é uma demonstração acadêmica e não possui fins comerciais.</h5><br>
+                <div class="rodape">
+                    <a href="https://github.com/JJON07/Projeto-Final" target="_blank">Repositório GitHub</a>
+                    <a href="">Contato</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>
