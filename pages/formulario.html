@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <base href="/Projeto-Final/">
     <style>
+        /* Seu CSS existente */
         h1 {
             font-size: 3rem;
             font-family: Arial, Helvetica, sans-serif;
@@ -253,7 +254,7 @@
         <div class="form-container">
             <h3>Cadastro de Colaboradores</h3>
             <p>Preencha os campos abaixo:</p>
-            <form action="/submit" method="POST">
+            <form id="cadastroForm">
                 <div class="form-group">
                     <label for="event-name">Nome do Evento/Experiência</label>
                     <input type="text" id="event-name" name="event-name" required aria-label="Nome do Evento ou Experiência">
@@ -303,5 +304,30 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const params = new URLSearchParams();
+
+            for (const [key, value] of formData.entries()) {
+                params.append(key, value);
+            }
+
+            // Constrói a nova URL com os parâmetros
+            const newUrl = window.location.pathname + '?' + params.toString();
+
+            // Atualiza a URL na barra de endereços sem recarregar a página
+            history.pushState(null, '', newUrl);
+
+            // Opcional: Você pode adicionar aqui um feedback para o usuário,
+            // como uma mensagem de sucesso ou logar os dados no console.
+            console.log('Formulário enviado e URL atualizada:', newUrl);
+            alert('Dados do formulário enviados! Verifique a URL.');
+        });
+    </script>
 </body>
 </html>
