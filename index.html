@@ -22,8 +22,7 @@
             font-family: 'Inter', sans-serif;
             text-align: left;
             padding-bottom: 10px;
-            padding-left: 30px;
-
+            padding-left: 20px;
         }
 
         h2 {
@@ -32,14 +31,14 @@
             -webkit-text-fill-color: transparent;
             font-size: 3rem;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         header {
             box-shadow: 0 2px 40px rgba(210, 180, 140, 0.5);
             padding-bottom: 15px;
             background-color: #fff;
-            margin-bottom: 70px;
+            margin-bottom: 20px;
         }
 
         nav {
@@ -69,7 +68,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            gap: 4.5rem;
+            gap: 4.5px;
         }
 
         nav ul li a {
@@ -80,9 +79,7 @@
             border-radius: 0.375rem;
             font-size: 2rem;
             transition: color 0.3s ease, background-color 0.3s ease;
-
         }
-
 
         nav ul li a:hover {
             color: #4f46e5;
@@ -109,7 +106,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             margin-bottom: 40px;
-            margin-top: 70px;
+            margin-top: 20px;
         }
 
         .intro p {
@@ -119,24 +116,31 @@
 
         .sections {
             display: flex;
-            flex-direction: column;
-            padding: 0;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 20px;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* Adicione esta linha para o espaço */
+            margin-bottom: 50px;
         }
 
         .section {
-            min-height: 400px;
-            padding: 60px 20px;
+            flex: 0 0 calc(50% - 10px);
+            min-height: 250px;
+            padding: 30px 20px;
             text-align: center;
             color: #000;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             position: relative;
             overflow: hidden;
+            box-sizing: border-box;
         }
 
         .section:nth-child(odd) {
@@ -159,15 +163,15 @@
         }
 
         .section h3 {
-            font-size: 28px;
-            margin: 0 0 15px;
+            font-size: 24px;
+            margin: 0 0 10px;
             z-index: 1;
         }
 
         .section p {
             font-size: 16px;
-            max-width: 600px;
-            margin: 0 auto 20px;
+            max-width: 500px;
+            margin: 0 auto 15px;
             line-height: 1.5;
             z-index: 1;
         }
@@ -176,7 +180,7 @@
             text-decoration: none;
             color: #fff;
             background-color: #000;
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 5px;
             font-size: 16px;
             z-index: 1;
@@ -242,7 +246,10 @@
 
             .nav-links.show {
                 display: flex;
+            }
 
+            .section {
+                flex: 0 0 100%;
             }
         }
     </style>
@@ -272,14 +279,11 @@
                     <li><a href="pages/landing.html">Landing Page</a></li>
                 </ul>
             </nav>
-
         </header>
     </div>
 
-    <h2>Bem vindo a Xp Connect a sua mais nova forma de encontrar experiencias e ficar por dentro de todos os eventos
-    </h2>
-    <p>Na Xp Connect temos o compromisso de te deixar ciente de tudo que tem rolado na cidade, pra não peder nada que
-        vai acontecer</p>
+    <h2>Bem vindo a Xp Connect a sua mais nova forma de encontrar experiencias e ficar por dentro de todos os eventos</h2>
+    <p>Na Xp Connect temos o compromisso de te deixar ciente de tudo que tem rolado na cidade, pra não peder nada que vai acontecer</p>
     <p>Conectamos você às melhores aventuras, eventos e vivências, personalizadas para tornar cada dia único.</p>
 
     <section class="intro">
@@ -288,8 +292,7 @@
     <div class="sections">
         <section class="section">
             <h3>Explore Experiências</h3>
-            <p>Descubra uma lista completa de experiências disponíveis, desde aventuras ao ar livre até eventos
-                culturais em Belo Horizonte.</p>
+            <p>Descubra uma lista completa de experiências disponíveis, desde aventuras ao ar livre até eventos culturais em Belo Horizonte.</p>
             <a href="pages/tabelas.html">Ver Experiências</a>
         </section>
         <section class="section">
@@ -317,17 +320,18 @@
             <p>Veja no mapa de Belo Horizonte onde suas próximas aventuras estão localizadas.</p>
             <a href="pages/mapas.html">Explorar Mapa</a>
         </section>
+    </div>
 
-        <footer>
-            <div>
-                <h5>&copy; 2025 Projeto XP Connect - Desenvolvido para a disciplina de Desenvolvimento WEB</h5>
-                <h5>Este projeto é uma demonstração acadêmica e não possui fins comerciais.</h5><br>
-                <div class="rodape">
-                    <a href="https://github.com/JJON07/Projeto-Final" target="_blank">Repositório GitHub</a>
-                    <a href="">Contato</a>
-                </div>
+    <footer>
+        <div>
+            <h5>© 2025 Projeto XP Connect - Desenvolvido para a disciplina de Desenvolvimento WEB</h5>
+            <h5>Este projeto é uma demonstração acadêmica e não possui fins comerciais.</h5><br>
+            <div class="rodape">
+                <a href="https://github.com/JJON07/Projeto-Final" target="_blank">Repositório GitHub</a>
+                <a href="">Contato</a>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>
