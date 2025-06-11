@@ -85,7 +85,7 @@
             margin-top: 50px;
         }
 
-        p{
+        p {
             font-size: 2rem;
             text-align: center;
             margin-top: 10px;
@@ -103,17 +103,25 @@
             height: auto;
             display: block;
         }
-        
+
         .highlight-spot {
             position: absolute;
-            width: 40px; /* Largura padrão do ícone do pino. AJUSTE CONFORME SEU ÍCONE. */
-            height: 40px; /* Altura padrão do ícone do pino. AJUSTE CONFORME SEU ÍCONE. */
-            background-image: url('../images/map-pin.png'); /* CAMINHO PARA SUA IMAGEM DE PINO */
-            background-size: contain; /* Garante que a imagem se ajuste ao tamanho */
-            background-repeat: no-repeat; /* Evita repetição da imagem */
-            background-position: center bottom; /* Posiciona a base do pino no local exato */
-            z-index: 5; /* Garante que o pino esteja acima da imagem do mapa */
-            pointer-events: none; /* Impede que ele bloqueie os cliques */
+            width: 40px;
+            /* Largura padrão do ícone do pino. AJUSTE CONFORME SEU ÍCONE. */
+            height: 40px;
+            /* Altura padrão do ícone do pino. AJUSTE CONFORME SEU ÍCONE. */
+            background-image: url('../images/map-pin.png');
+            /* CAMINHO PARA SUA IMAGEM DE PINO */
+            background-size: contain;
+            /* Garante que a imagem se ajuste ao tamanho */
+            background-repeat: no-repeat;
+            /* Evita repetição da imagem */
+            background-position: center bottom;
+            /* Posiciona a base do pino no local exato */
+            z-index: 5;
+            /* Garante que o pino esteja acima da imagem do mapa */
+            pointer-events: none;
+            /* Impede que ele bloqueie os cliques */
             box-sizing: border-box;
         }
 
@@ -121,30 +129,37 @@
             left: 23%;
             top: 72%;
         }
+
         .pin-local-b {
             left: 40%;
             top: 69.5%;
         }
+
         .pin-local-c {
             left: 53%;
             top: 58%;
         }
+
         .pin-local-d {
             left: 54.5%;
             top: 53%;
         }
+
         .pin-local-e {
             left: 45%;
             top: 30%;
         }
+
         .pin-local-f {
             left: 43%;
             top: 28%;
         }
+
         .pin-local-g {
             left: 57%;
             top: 57%;
         }
+
         .pin-local-h {
             left: 36.5%;
             top: 33.5%;
@@ -175,30 +190,37 @@
             left: 230px;
             top: 760px;
         }
+
         #infoB {
             left: 350px;
             top: 700px;
         }
+
         #infoC {
             left: 470px;
             top: 610px;
         }
+
         #infoD {
             left: 480px;
             top: 530px;
         }
+
         #infoE {
             left: 400px;
             top: 300px;
         }
+
         #infoF {
             left: 400px;
             top: 250px;
         }
+
         #infoG {
             left: 340px;
             top: 350px;
         }
+
         #infoH {
             left: 510px;
             top: 580px;
@@ -226,6 +248,18 @@
             border-width: 5px;
             /* Aumenta a espessura da borda ao passar o mouse */
         }
+
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px;
+            margin-top: 70px;
+        }
     </style>
 </head>
 
@@ -249,23 +283,26 @@
         </header>
     </div>
 
-    <h2>Encontre experiências perto de você:</h2>
-    <p>Clique e Veja as informações</p>
+    <section class="intro">
+        <h2>Encontre experiências perto de você:</h2>
+        <p>Clique e Veja as informações</p>
+    </section>
+
     <div class="centro">
         <section class="mapa">
             <figure class="mapa-container">
                 <img class="mapa-img" src="../images/mapa-bh.jpg" alt="Mapa de Belo Horizonte" usemap="#mapabh">
 
                 <!-- Pinos -->
-                <span class="highlight-spot pin-local-a"></span> 
-                <span class="highlight-spot pin-local-b"></span> 
-                <span class="highlight-spot pin-local-c"></span> 
-                <span class="highlight-spot pin-local-d"></span> 
-                <span class="highlight-spot pin-local-e"></span> 
-                <span class="highlight-spot pin-local-f"></span> 
-                <span class="highlight-spot pin-local-g"></span> 
-                <span class="highlight-spot pin-local-h"></span> 
-                
+                <span class="highlight-spot pin-local-a"></span>
+                <span class="highlight-spot pin-local-b"></span>
+                <span class="highlight-spot pin-local-c"></span>
+                <span class="highlight-spot pin-local-d"></span>
+                <span class="highlight-spot pin-local-e"></span>
+                <span class="highlight-spot pin-local-f"></span>
+                <span class="highlight-spot pin-local-g"></span>
+                <span class="highlight-spot pin-local-h"></span>
+
                 <!-- Caixas -->
                 <div class="info-box" id="infoA">
                     <strong>Arte Quilombo Capoeira</strong><br>
@@ -290,7 +327,7 @@
                 <div class="info-box" id="infoE">
                     <strong>Mineirão</strong><br>
                     Local:Av. Antônio Abrahão Caram, 1001 <br>
-                    
+
                 </div>
 
                 <div class="info-box" id="infoF">
@@ -307,7 +344,7 @@
                     <strong>Feira Hippie</strong><br>
                     Local: Av. Afonso Pena - Centro<br>
                 </div>
-                </figure>
+            </figure>
             <map name="mapabh">
                 <area shape="circle" coords="200,745,12" href="javascript:void(0);" alt="Capoeira"
                     title="Arte Quilombo Capoeira" id="areaA">
@@ -319,13 +356,13 @@
                     title="Praia Buritis" id="areaD">
                 <area shape="circle" coords="380,320,12" href="javascript:void(0);" alt="Experiência esportiva"
                     title="Mineirão" id="areaE">
-                <area shape="circle" coords="372,303,12" href="javascript:void(0);" alt="Lazer" title="Passeio de bicicleta na orla da Pampulha"
-                    id="areaF">
-                <area shape="circle" coords="315,360,12" href="javascript:void(0);" alt="Restaurante/Bar" title="Bar Sô Madruga"
-                    id="areaG">
-                <area shape="circle" coords="487,597,12" href="javascript:void(0);" alt="Mercado e cultura" title="Feira Hippie"
-                    id="areaH">
-                </map>
+                <area shape="circle" coords="372,303,12" href="javascript:void(0);" alt="Lazer"
+                    title="Passeio de bicicleta na orla da Pampulha" id="areaF">
+                <area shape="circle" coords="315,360,12" href="javascript:void(0);" alt="Restaurante/Bar"
+                    title="Bar Sô Madruga" id="areaG">
+                <area shape="circle" coords="487,597,12" href="javascript:void(0);" alt="Mercado e cultura"
+                    title="Feira Hippie" id="areaH">
+            </map>
         </section>
     </div>
     <script>
