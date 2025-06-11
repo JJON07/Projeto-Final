@@ -233,6 +233,64 @@
     #griddosgrids {
       border: 0px;
     }
+    .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            position: relative;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 3rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+            font-size: 2rem;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #4a5568;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #4f46e5;
+            background-color: #eef2ff;
+            padding: 0.5rem 0.75rem;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                display: none;
+                padding: 10px 0;
+                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.show {
+                display: flex;
+
+            }
+        }
   </style>
 
 </head>
