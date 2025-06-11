@@ -1,1 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            border: 0px;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+
+
+        header {
+            box-shadow: 0 2px 40px rgba(210, 180, 140, 0.5);
+            padding-bottom: 15px;
+            background-color: #fff;
+            margin-bottom: 70px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        #x {
+            font-size: 7rem;
+            color: #D2B48C;
+        }
+
+        #b {
+            font-size: 5.2rem;
+            color: #FA8072;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 4.5rem;
+        }
+
+        nav ul li a {
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 2rem;
+            transition: color 0.3s ease, background-color 0.3s ease;
+
+        }
+
+
+        nav ul li a:hover {
+            color: #4f46e5;
+            background-color: #eef2ff;
+        }
+
+        nav ul li a.active {
+            color: #4f46e5;
+            font-weight: 600;
+            border-bottom: 2px solid #4f46e5;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            position: relative;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 3rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+            font-size: 2rem;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #4a5568;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #4f46e5;
+            background-color: #eef2ff;
+            padding: 0.5rem 0.75rem;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                display: none;
+                padding: 10px 0;
+                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+        }
+
+        #texto-grande {
+            font-size: 3rem;
+            color: black;
+            font-family: 'Inter', sans-serif;
+            background-color: none;
+            text-align: left;
+        }
+
+        .sectionimg {
+            width: 20%;
+            text-align: left;
+            margin-left: 4%;
+        }
+
+        .imgborder {
+            border: 5px solid white;
+            border-radius: 15px;
+            width: 250px;
+            height: 200px;
+            display: block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .sectiontextimg {
+            display: flex;
+            gap: 4%;
+        }
+
+        section a {
+            margin: 15%;
+            text-decoration: none;
+            color: #fff;
+            background-color: #000;
+            padding: 5% 8%;
+            border-radius: 5px;
+            font-size: 16px;
+            z-index: 1;
+            transition: background-color 0.3s ease;
+        }
+
+        h2 {
+            background: linear-gradient(to right, #D2B48C, #fa8072);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            padding: 50px 20px;
+            max-width: 300px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px;
+            margin-top: 70px;
+        }
+
+        #firstintro{
+            margin-left: 15%;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        h3{
+            font-size: 2.7rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div_header">
+        <header>
+            <h1><b id="x">X</b><b id="b">p</b> Connect</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav class="navbar">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" id="first-a">Início</a></li>
+                    <li><a href="pages/tabelas.html">Tabelas</a></li>
+                    <li><a href="pages/grid.html">Grid</a></li>
+                    <li><a href="pages/formulario.html">Formulário</a></li>
+                    <li><a href="pages/mapas.html">Mapa</a></li>
+                    <li><a href="pages/calculo.html">Cálculo JS</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                    <li><a href="pages/landing.html">Landing Page</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section class="sectiontextimg">
+            <section class="sectionimg">
+                <h2 id="texto-grande">Viva o Inesperado. Conecte-se a Experiências Únicas!</h2>
+                <br>
+                <p style="text-align: left;">Conectamos você às melhores aventuras, eventos e vivências, personalizadas para tornar cada dia
+                    único.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <a style="text-align: center;" href="C:\Users\guilh\OneDrive\Área de Trabalho\ProjetosWEB\Xpconnect\pages\tabelas.html">Ver Experiências</a>
+            </section>
+            <img src="C:\Users\guilh\OneDrive\Área de Trabalho\ProjetosWEB\Xpconnect\images\MINEIRAO-004-1.jpg"
+                class="imgborder" alt="">
+            <img src="C:\Users\guilh\OneDrive\Área de Trabalho\ProjetosWEB\Xpconnect\images\GerladoVinhos.jpg"
+                class="imgborder" alt="">
+            <img src="C:\Users\guilh\OneDrive\Área de Trabalho\ProjetosWEB\Xpconnect\images\Feira-Hippie-BH.jpg"
+                class="imgborder" alt="">
+        </section>
+        <br><br><br><br><br><br>
+        <h2>Porque escolher a Xp Connect?</h2>
+        <section class="sectiontextimg" id="firstintro"> 
+        <section class="intro">
+            <h3>Sempre por dentro</h3>
+            <p>Na Xp Connect temos o compromisso de te deixar ciente de tudo que tem rolado na cidade, pra não peder nada que
+                vai acontecer</p>
+        </section>
+        <section class="intro">
+            <h3>Experiencias Selecionadas</h3>
+            <p>As melhores experiencias para seu perfil são recomendadas para você, para tornar cada dia unico e especial</p>
+        </section>
+        <section class="intro">
+            <h3>Para todos os bolsos</h3>
+            <p>Aqui voce fica por dentro de tudo, desde experiencia gratuitas a eventos exclusivos. com filtros pra cada orçamento</p>
+        </section>
+        </section>
+
+        <footer>
+            <div>
+                <h5>&copy; 2025 Projeto XP Connect - Desenvolvido para a disciplina de Desenvolvimento WEB</h5>
+                <h5>Este projeto é uma demonstração acadêmica e não possui fins comerciais.</h5><br>
+                <div class="rodape">
+                    <a href="https://github.com/JJON07/Projeto-Final" target="_blank">Repositório GitHub</a>
+                    <a href="">Contato</a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
